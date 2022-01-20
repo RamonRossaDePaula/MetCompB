@@ -8,7 +8,7 @@ x(n+1) = xn + f( t(n+1), x(n+1) ) * h
 
 • Ponto Favorável do Método:
     - A partir do mesmo valor de passo, delta_t = h, ele dará um valor da solução melhor do que Euler Explícito.
-    
+
 • Ponto Desfavorável do Método:
     - Por ser Implícito, não temos o termo x(n+1) isolado do lado esquerdo.
     - Dependendo da função f(x) (função seno, exponencial, tangente...) funções *i*transcendentais, pode ser que
@@ -46,8 +46,8 @@ OBS: Os passos abaixo estão listando o Método Explícito.
 dN/dt = - alfa * N
 1 - Use;
         
-        detla_N = - alfa * delta_t * N(t)
-        detla_N = N(t + delta_t) - N(t) = - alfa * delta_t * N(t)
+        delta_N = - alfa * delta_t * N(t)
+        delta_N = N(t + delta_t) - N(t) = - alfa * delta_t * N(t)
         N(t + delta_N) = (1 - alfa * delta_t) * N(t)
         
 com delta_t = 1s, alfa = 9,24 * 10 ** -3 segundos...
